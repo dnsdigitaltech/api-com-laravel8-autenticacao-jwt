@@ -12,6 +12,6 @@ Criei uma api completa com Laravel 8 e Mysql com os seguintes itens:
 - Ver uma Categoria específica
 - Deleta uma Categoria
 
-## API com Laravel 8
+## Autenticação da API Laravel 8
 
-Autenticação da API atravé de token usando JWT
+Autenticação da API através de token usando JWT
