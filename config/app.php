@@ -175,9 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         /*
-         * JWT
+         * JWT https://jwt-auth.readthedocs.io/en/develop/laravel-installation/
          */
-        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+        'Tymon\JWTAuth\Providers\LaravelServiceProvider'
 
     ],
 
@@ -230,7 +230,11 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        /**
+         * JWT: https://jwt-auth.readthedocs.io/en/develop/laravel-installation/
+         */
+        'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
+        'JWTFactory' => 'Tymon\JWTAuthFacades\JWTFactory'
     ],
 
 ];
